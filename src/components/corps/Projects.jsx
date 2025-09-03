@@ -16,64 +16,63 @@ export default function Projects() {
   const projects = [
     {
       title: "Portfolio Personnel",
-      image: "https://via.placeholder.com/600x400.png?text=Portfolio",
+      image: "https://rovert-tech.vercel.app/p4.png",
       description:
         "Un site moderne pour présenter mon parcours, mes compétences et mes projets.",
       stack: ["React", "TailwindCSS", "GSAP"],
     },
     {
       title: "Application E-commerce",
-      image: "https://via.placeholder.com/600x400.png?text=E-commerce",
+      image: "https://rovert-tech.vercel.app/p5.png",
       description:
         "Une plateforme complète avec gestion des produits, panier et paiement.",
       stack: ["Node.js", "Express", "MongoDB", "React"],
     },
     {
       title: "Dashboard Analytics",
-      image: "https://via.placeholder.com/600x400.png?text=Dashboard",
+      image: "https://rovert-tech.vercel.app/P6.png",
       description:
         "Un tableau de bord interactif pour suivre des métriques en temps réel.",
       stack: ["Next.js", "TypeScript", "PostgreSQL"],
     },
     {
       title: "Blog Tech",
-      image: "https://via.placeholder.com/600x400.png?text=Blog+Tech",
+      image: "https://rovert-tech.vercel.app/p7.png",
       description:
         "Un blog pour partager des articles techniques et des tutoriels.",
       stack: ["Gatsby", "GraphQL", "Markdown"],
     },
     {
       title: "Réseau Social",
-      image: "https://via.placeholder.com/600x400.png?text=Réseau+Social",
+      image: "https://rovert-tech.vercel.app/p8.png",
       description:
         "Une plateforme sociale avec profils utilisateurs, posts et messagerie.",
       stack: ["Laravel", "Vue.js", "MySQL"],
     },
     {
       title: "Application de Gestion de Projets",
-      image: "https://via.placeholder.com/600x400.png?text=Gestion+de+Projets",
+      image: "https://rovert-tech.vercel.app/p9.png",
       description:
         "Un outil pour planifier, suivre et collaborer sur des projets.",
       stack: ["Django", "React", "SQLite"],
     },
     {
       title: "Site de Réservation de Voyages",
-      image:
-        "https://via.placeholder.com/600x400.png?text=Réservation+de+Voyages",
+      image: "https://rovert-tech.vercel.app/p1.jpg",
       description:
         "Une plateforme pour rechercher et réserver des voyages facilement.",
       stack: ["Ruby on Rails", "Bootstrap", "PostgreSQL"],
     },
     {
       title: "Application de Fitness",
-      image: "https://via.placeholder.com/600x400.png?text=Fitness",
+      image: "https://rovert-tech.vercel.app/p2.jpg",
       description:
         "Une application pour suivre les entraînements et les progrès physiques.",
       stack: ["Flutter", "Firebase", "Dart"],
     },
     {
       title: "Système de Gestion de Contenu (CMS)",
-      image: "https://via.placeholder.com/600x400.png?text=CMS",
+      image: "https://rovert-tech.vercel.app/p3.jpg",
       description:
         "Un CMS flexible pour créer et gérer du contenu web facilement.",
       stack: ["WordPress", "PHP", "MySQL"],
