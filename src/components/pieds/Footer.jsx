@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Branding */}
         <div>
-          <h2 className="text-2xl font-bold text-indigo-400">MonPortfolio</h2>
+          <h2 className="text-2xl font-bold text-indigo-400">R.</h2>
           <p className="mt-2 text-sm">
             Développeur Full Stack | Marketing & Communication Digitale
           </p>
@@ -119,7 +119,7 @@ export default function Footer() {
 
       {/* Ligne en bas */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-        © {new Date().getFullYear()} MonPortfolio. Tous droits réservés.
+        © {new Date().getFullYear()} RovertNet. Tous droits réservés.
       </div>
     </footer>
   );
