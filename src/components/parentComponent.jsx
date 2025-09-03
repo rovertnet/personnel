@@ -3,6 +3,9 @@ import NavBar from './tete/NavBar'
 import Hero from './corps/Hero';
 import About from './corps/About';
 import Skills from './corps/Skills';
+import Projects from './corps/Projects';
+import Contact from './corps/Contact';
+import Footer from './pieds/Footer';
 
 export default function ParentComponent() {
   return (
@@ -11,6 +14,9 @@ export default function ParentComponent() {
       <Hero />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }
