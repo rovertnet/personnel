@@ -90,7 +90,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-4">Suivez-moi</h3>
           <div className="flex justify-center md:justify-start gap-4">
             <a
-              href="https://github.com/ton-github"
+              href="https://github.com/rovertnet"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-400 text-2xl"
@@ -98,7 +98,7 @@ export default function Footer() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/ton-linkedin"
+              href="https://www.linkedin.com/in/robert-matundu-6121b1186/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-400 text-2xl"
@@ -106,7 +106,7 @@ export default function Footer() {
               <FaLinkedin />
             </a>
             <a
-              href="https://twitter.com/ton-twitter"
+              href="https://x.com/robertkabamb?s=21"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-400 text-2xl"

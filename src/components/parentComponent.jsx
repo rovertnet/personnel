@@ -7,6 +7,7 @@ import Projects from './corps/Projects';
 import Contact from './corps/Contact';
 import Footer from './pieds/Footer';
 import Temoignages from './corps/Temoignages';
+import Cursus from './corps/Cursus';
 
 export default function ParentComponent() {
   return (
@@ -15,6 +16,7 @@ export default function ParentComponent() {
       <Hero />
       <About />
       <Skills />
+      <Cursus />
       <Projects />
       <Temoignages />
       <Contact />
