@@ -17,13 +17,13 @@ export default function Skills() {
 
   const skills = [
     { name: "React", icon: <FaReact size={40} />, level: 90 },
+    { name: "Next.js", icon: <SiNextdotjs size={40} />, level: 85 },
+    { name: "MySQL", icon: <SiMysql size={40} />, level: 85 },
     { name: "Node.js", icon: <FaNodeJs size={40} />, level: 80 },
     { name: "Laravel", icon: <FaLaravel size={40} />, level: 75 },
     { name: "NestJS", icon: <SiNestjs size={40} />, level: 70 },
-    { name: "Next.js", icon: <SiNextdotjs size={40} />, level: 85 },
-    { name: "TypeScript", icon: <SiTypescript size={40} />, level: 80 },
-    { name: "MySQL", icon: <SiMysql size={40} />, level: 75 },
-    { name: "PostgreSQL", icon: <SiPostgresql size={40} />, level: 70 },
+    { name: "PostgreSQL", icon: <SiPostgresql size={40} />, level: 60 },
+    { name: "TypeScript", icon: <SiTypescript size={40} />, level: 50 },
   ];
 
   useEffect(() => {
