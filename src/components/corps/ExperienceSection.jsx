@@ -4,27 +4,42 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ExperienceSectionHorizontal() {
+export default function ExperienceTimelineParallax() {
   const sectionRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    const cards = sectionRef.current.querySelectorAll(".exp-card");
+    const sections = gsap.utils.toArray(".exp-card");
 
-    gsap.fromTo(
-      cards,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.3,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-        },
-      }
-    );
+    gsap.to(containerRef.current, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + containerRef.current.offsetWidth,
+      },
+    });
+
+    // Animation fade-in des cartes
+    sections.forEach((card) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: card,
+            start: "left center",
+            containerAnimation: gsap.to(containerRef.current),
+          },
+        }
+      );
+    });
   }, []);
 
   const experiences = [
@@ -54,18 +69,21 @@ export default function ExperienceSectionHorizontal() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-6 md:px-16 py-16 bg-black text-white"
+      className="relative w-full h-screen overflow-hidden bg-black text-white"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <h2 className="absolute top-8 left-1/2 transform -translate-x-1/2 text-3xl md:text-4xl font-bold z-10">
         Expérience Professionnelle
       </h2>
 
-      {/* Timeline horizontale */}
-      <div className="flex overflow-x-auto gap-8 pb-4 scrollbar-thin scrollbar-thumb-red-500">
+      {/* Container horizontal */}
+      <div
+        ref={containerRef}
+        className="flex h-full items-center space-x-8 px-16"
+      >
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="exp-card min-w-[300px] md:min-w-[350px] bg-gray-800 rounded-xl shadow-lg p-6 relative border-t-4 border-red-500"
+            className="exp-card flex-shrink-0 w-[300px] md:w-[400px] bg-gray-800 rounded-xl shadow-lg p-6 border-t-4 border-red-500"
           >
             <h3 className="text-xl font-semibold">
               {exp.role}{" "}
