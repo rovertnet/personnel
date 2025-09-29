@@ -10,39 +10,31 @@ export default function Cursus() {
 
   const cursus = [
     {
-      date: "2023 - 2024",
-      title: "Master Développement Web",
-      school: "Université de Kinshasa",
-      description:
-        "Spécialisation en développement full-stack, optimisation des systèmes et sécurité web.",
-      type: "académique",
-    },
-    {
       date: "2020 - 2023",
-      title: "Licence Informatique",
-      school: "Institut Supérieur des Techniques Appliquées",
+      title: "Licence en Informatique appliquée orientation Génie Logiciel",
+      school: "Institut Supérieur d'Informatique Programmation et Analyse ISIPA en sigle",
       description:
         "Bases solides en programmation, bases de données et architecture logicielle.",
       type: "académique",
     },
     {
-      date: "2018 - 2020",
-      title: "BTS Marketing Digital",
-      school: "Académie Digitale",
+      date: "2017 - 2020",
+      title: "Programmation & Analyse de données",
+      school: "Institut Supérieur d'Informatique Programmation et Analyse ISIPA en sigle",
       description:
-        "Stratégies de communication digitale, SEO, campagnes publicitaires et réseaux sociaux.",
+        "Bases solides en programmation et bases de données",
       type: "académique",
     },
     {
-      date: "2024",
-      title: "Certification React Avancé",
-      school: "Udemy",
+      date: "2022",
+      title: "Certification React",
+      school: "OpenClassRoom",
       description:
         "Hooks, Context API, performance et bonnes pratiques pour projets réels.",
       type: "certification",
     },
     {
-      date: "2023",
+      date: "2024",
       title: "Formation Next.js & TypeScript",
       school: "OpenClassrooms",
       description:
@@ -50,7 +42,7 @@ export default function Cursus() {
       type: "certification",
     },
     {
-      date: "2022",
+      date: "2025",
       title: "Node.js & NestJS Backend",
       school: "Udemy",
       description:
@@ -58,7 +50,7 @@ export default function Cursus() {
       type: "certification",
     },
     {
-      date: "2021",
+      date: "2023",
       title: "Introduction à l’Intelligence Artificielle",
       school: "Coursera",
       description:

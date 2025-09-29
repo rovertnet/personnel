@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import profileimage from "../../assets/profile.jpg"
 
 // Enregistrement du plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -57,7 +58,7 @@ export default function About() {
         {/* Photo */}
         <div ref={imgRef} className="flex justify-center">
           <img
-            src="https://scontent.fbzv3-2.fna.fbcdn.net/v/t39.30808-6/461840239_1058180835913350_1832807611353982510_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGgiGWGDVybcdJjUgvT80nDQcRdczSQRC5BxF1zNJBELk-YL9GDXdbN9GlMPomp3baKYx6fxEiVqAPJ_W3M_ZhG&_nc_ohc=pJfXu7r2FUgQ7kNvwESWsPR&_nc_oc=AdkA2LTHpDIO3Ip3EwJbrYX5Jg3dAC70SsLg-64NwzvVCKIicdI1RXIra3KYAPmRXOQBqyl_Ef1Yqfn1twBYfbN0&_nc_zt=23&_nc_ht=scontent.fbzv3-2.fna&_nc_gid=cEjq5GmWAo5dLQCi5S0DGw&oh=00_AfYmqMaqS47deKTzm1NJNPeE7p42uzzzgw_-przWvTnCnQ&oe=68BE2F58" // ⚡ Mets ton image dans /public/profile.jpg
+            src={profileimage} // ⚡ Mets ton image dans /public/profile.jpg
             alt="Photo de profil"
             className="w-64 h-64 object-cover rounded-2xl shadow-lg border-2 border-indigo-500"
           />
