@@ -46,7 +46,7 @@ export default function Cursus() {
       title: "Node.js & NestJS Backend",
       school: "Udemy",
       description:
-        "Construction d'APIs REST et GraphQL robustes avec NestJS et TypeORM.",
+        "Construction d'APIs REST et GraphQL robustes avec NestJS, TypeORM et Prisma.",
       type: "certification",
     },
     {

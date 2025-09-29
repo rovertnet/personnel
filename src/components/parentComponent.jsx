@@ -8,6 +8,7 @@ import Contact from './corps/Contact';
 import Footer from './pieds/Footer';
 import Temoignages from './corps/Temoignages';
 import Cursus from './corps/Cursus';
+import ExperienceSectionHorizontal from './corps/ExperienceSection';
 
 export default function ParentComponent() {
   return (
@@ -17,6 +18,7 @@ export default function ParentComponent() {
       <About />
       <Skills />
       <Cursus />
+      <ExperienceSectionHorizontal />
       <Projects />
       <Temoignages />
       <Contact />
